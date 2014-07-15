@@ -10,6 +10,8 @@
 #import "OAArrayDataSource.h"
 #import "OAMenuTableViewCell.h"
 
+static NSInteger cell_width = 320;
+
 @interface OAMenuViewController ()<UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *menuTableView;
@@ -65,6 +67,16 @@
     self.menuTableView.dataSource = self.arrayDataSource;
     self.menuTableView.delegate = self;
     self.menuTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [cell setLeft:cell_width];
+
+    [UIView beginAnimations:@"Floating" context:NULL];
+    [UIView setAnimationDuration:(indexPath.row / 2.0)];
+    [cell setLeft:0];
+    [UIView commitAnimations];
 }
 
 @end
