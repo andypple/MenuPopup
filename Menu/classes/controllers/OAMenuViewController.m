@@ -46,6 +46,7 @@ static NSInteger cell_width = 320;
         {
             cell.itemLabel.text = item;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            cell.selectionView.hidden = ![item isEqualToString:@"Explore"];
         };
 
         IdentifierParserBlock identifierParserBlock = ^NSString *(id item)

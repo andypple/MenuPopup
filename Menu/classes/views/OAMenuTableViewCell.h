@@ -11,5 +11,6 @@
 @interface OAMenuTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *itemLabel;
+@property (weak, nonatomic) IBOutlet UIView *selectionView;
 
 @end

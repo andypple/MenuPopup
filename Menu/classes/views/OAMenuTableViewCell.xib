@@ -21,7 +21,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIm-CY-Dtu">
-                        <rect key="frame" x="0.0" y="0.0" width="5" height="50"/>
+                        <rect key="frame" x="0.0" y="10" width="5" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.32549019610000002" green="0.7843137255" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -31,6 +31,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="itemLabel" destination="eGQ-KV-4Nx" id="n9R-WD-k0B"/>
+                <outlet property="selectionView" destination="kIm-CY-Dtu" id="rua-Tk-HZ2"/>
             </connections>
         </tableViewCell>
     </objects>
