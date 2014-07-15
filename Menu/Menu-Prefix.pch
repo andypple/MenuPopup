@@ -15,4 +15,5 @@
     #import <Foundation/Foundation.h>
     #import "UIViewController+Addition.h"
     #import "UIView+Nib.h"
+    #import "UIView+Additions.h"
 #endif

@@ -29,6 +29,7 @@
 		1714B2B91974EB41006E9C7B /* OAMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1714B2B71974EB41006E9C7B /* OAMenuTableViewCell.xib */; };
 		17560B391974ECD400852112 /* OAArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 17560B381974ECD400852112 /* OAArrayDataSource.m */; };
 		17560B3F1974EDDB00852112 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = 17560B3E1974EDDB00852112 /* UIView+Nib.m */; };
+		17560B421974F26000852112 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17560B411974F26000852112 /* UIView+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		17560B381974ECD400852112 /* OAArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAArrayDataSource.m; sourceTree = "<group>"; };
 		17560B3D1974EDDB00852112 /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib.h"; sourceTree = "<group>"; };
 		17560B3E1974EDDB00852112 /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib.m"; sourceTree = "<group>"; };
+		17560B401974F26000852112 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		17560B411974F26000852112 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +235,8 @@
 				17560B381974ECD400852112 /* OAArrayDataSource.m */,
 				17560B3D1974EDDB00852112 /* UIView+Nib.h */,
 				17560B3E1974EDDB00852112 /* UIView+Nib.m */,
+				17560B401974F26000852112 /* UIView+Additions.h */,
+				17560B411974F26000852112 /* UIView+Additions.m */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 				1714B2A91974E694006E9C7B /* UIViewController+Addition.m in Sources */,
 				1714B2A01974E573006E9C7B /* OAHomeViewController.m in Sources */,
 				1714B2B81974EB41006E9C7B /* OAMenuTableViewCell.m in Sources */,
+				17560B421974F26000852112 /* UIView+Additions.m in Sources */,
 				1714B2AD1974E795006E9C7B /* OAMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
