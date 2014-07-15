@@ -8,10 +8,16 @@
 
 #import "OAPopupViewController.h"
 
+static NSInteger close_button_x = 15;
+static NSInteger close_button_y = 30;
+static NSInteger close_button_width = 44;
+static NSInteger close_button_height = 44;
+
 @interface OAPopupViewController ()
 
 @property (strong, nonatomic) UIViewController *contentViewController;
 @property (strong, nonatomic) UIView *contentView;
+@property (strong, nonatomic) UIButton *closeButton;
 
 @end
 
@@ -52,9 +58,26 @@
     return _contentView;
 }
 
+- (UIButton *)closeButton
+{
+    if (!_closeButton) {
+        _closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_closeButton setBackgroundImage:[UIImage imageNamed:@"close-button"] forState:UIControlStateNormal];
+        _closeButton.frame = CGRectMake(close_button_x, close_button_y, close_button_width, close_button_height);
+        [_closeButton addTarget:self action:@selector(closeAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _closeButton;
+}
+
 - (void)setupView
 {
     [self.view addSubview:self.contentView];
+    [self.view addSubview:self.closeButton];
+}
+
+- (void)closeAction
+{
+    [self dismissWithAnimation];
 }
 
 @end
