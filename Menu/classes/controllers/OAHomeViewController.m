@@ -7,8 +7,12 @@
 //
 
 #import "OAHomeViewController.h"
+#import "OAPopupViewController.h"
+#import "OAMenuViewController.h"
 
 @interface OAHomeViewController ()
+
+@property (strong, nonatomic) OAPopupViewController *popUpViewController;
 
 @end
 
@@ -36,6 +40,8 @@
 
 - (void)popUpMenu
 {
+    self.popUpViewController = [[OAPopupViewController alloc] initWithViewControllerContent:[[OAMenuViewController alloc] init]];
+    [self.popUpViewController showInView:self.view animated:YES];
 }
 
 @end

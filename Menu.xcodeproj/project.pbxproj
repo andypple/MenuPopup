@@ -21,6 +21,10 @@
 		1714B2921974E4FB006E9C7B /* MenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714B2911974E4FB006E9C7B /* MenuTests.m */; };
 		1714B2A01974E573006E9C7B /* OAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714B29E1974E573006E9C7B /* OAHomeViewController.m */; };
 		1714B2A11974E573006E9C7B /* OAHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1714B29F1974E573006E9C7B /* OAHomeViewController.xib */; };
+		1714B2A51974E626006E9C7B /* OAPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714B2A41974E626006E9C7B /* OAPopupViewController.m */; };
+		1714B2A91974E694006E9C7B /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714B2A81974E694006E9C7B /* UIViewController+Addition.m */; };
+		1714B2AD1974E795006E9C7B /* OAMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714B2AB1974E795006E9C7B /* OAMenuViewController.m */; };
+		1714B2AE1974E795006E9C7B /* OAMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1714B2AC1974E795006E9C7B /* OAMenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		1714B29D1974E573006E9C7B /* OAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHomeViewController.h; sourceTree = "<group>"; };
 		1714B29E1974E573006E9C7B /* OAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHomeViewController.m; sourceTree = "<group>"; };
 		1714B29F1974E573006E9C7B /* OAHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAHomeViewController.xib; sourceTree = "<group>"; };
+		1714B2A31974E626006E9C7B /* OAPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPopupViewController.h; sourceTree = "<group>"; };
+		1714B2A41974E626006E9C7B /* OAPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPopupViewController.m; sourceTree = "<group>"; };
+		1714B2A71974E694006E9C7B /* UIViewController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Addition.h"; sourceTree = "<group>"; };
+		1714B2A81974E694006E9C7B /* UIViewController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Addition.m"; sourceTree = "<group>"; };
+		1714B2AA1974E795006E9C7B /* OAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMenuViewController.h; sourceTree = "<group>"; };
+		1714B2AB1974E795006E9C7B /* OAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMenuViewController.m; sourceTree = "<group>"; };
+		1714B2AC1974E795006E9C7B /* OAMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAMenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +164,8 @@
 		1714B29B1974E561006E9C7B /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				1714B2A61974E685006E9C7B /* categories */,
+				1714B2A21974E61C006E9C7B /* popUpModule */,
 				1714B29C1974E561006E9C7B /* controllers */,
 			);
 			path = classes;
@@ -164,8 +177,29 @@
 				1714B29D1974E573006E9C7B /* OAHomeViewController.h */,
 				1714B29E1974E573006E9C7B /* OAHomeViewController.m */,
 				1714B29F1974E573006E9C7B /* OAHomeViewController.xib */,
+				1714B2AA1974E795006E9C7B /* OAMenuViewController.h */,
+				1714B2AB1974E795006E9C7B /* OAMenuViewController.m */,
+				1714B2AC1974E795006E9C7B /* OAMenuViewController.xib */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		1714B2A21974E61C006E9C7B /* popUpModule */ = {
+			isa = PBXGroup;
+			children = (
+				1714B2A31974E626006E9C7B /* OAPopupViewController.h */,
+				1714B2A41974E626006E9C7B /* OAPopupViewController.m */,
+			);
+			path = popUpModule;
+			sourceTree = "<group>";
+		};
+		1714B2A61974E685006E9C7B /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				1714B2A71974E694006E9C7B /* UIViewController+Addition.h */,
+				1714B2A81974E694006E9C7B /* UIViewController+Addition.m */,
+			);
+			path = categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1714B2771974E4FB006E9C7B /* InfoPlist.strings in Resources */,
+				1714B2AE1974E795006E9C7B /* OAMenuViewController.xib in Resources */,
 				1714B27F1974E4FB006E9C7B /* Images.xcassets in Resources */,
 				1714B2A11974E573006E9C7B /* OAHomeViewController.xib in Resources */,
 			);
@@ -266,8 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1714B27D1974E4FB006E9C7B /* OAAppDelegate.m in Sources */,
+				1714B2A51974E626006E9C7B /* OAPopupViewController.m in Sources */,
 				1714B2791974E4FB006E9C7B /* main.m in Sources */,
+				1714B2A91974E694006E9C7B /* UIViewController+Addition.m in Sources */,
 				1714B2A01974E573006E9C7B /* OAHomeViewController.m in Sources */,
+				1714B2AD1974E795006E9C7B /* OAMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
