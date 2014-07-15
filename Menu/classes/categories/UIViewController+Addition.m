@@ -20,4 +20,16 @@
     }];
 }
 
+- (void)dismissWithAnimation
+{
+    [UIView animateWithDuration:.25 animations:^{
+        self.view.transform = CGAffineTransformMakeScale(0.7, 0.7);
+        self.view.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        if (finished) {
+            [self.view removeFromSuperview];
+        }
+    }];
+}
+
 @end

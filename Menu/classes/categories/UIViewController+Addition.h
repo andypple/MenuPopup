@@ -11,5 +11,6 @@
 @interface UIViewController (Addition)
 
 - (void)showWithAnimation;
+- (void)dismissWithAnimation;
 
 @end
