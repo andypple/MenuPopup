@@ -11,5 +11,6 @@
 @interface UIView (Additions)
 
 - (void)setLeft:(CGFloat)x;
+- (UIImage *)screenShot;
 
 @end

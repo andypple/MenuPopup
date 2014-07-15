@@ -17,4 +17,13 @@
     self.frame = frame;
 }
 
+- (UIImage *)screenShot
+{
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0.0f);
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
+    UIImage * snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return snapshotImage;
+}
+
 @end
