@@ -19,6 +19,8 @@
 		1714B2881974E4FB006E9C7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1714B2701974E4FB006E9C7B /* UIKit.framework */; };
 		1714B2901974E4FB006E9C7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1714B28E1974E4FB006E9C7B /* InfoPlist.strings */; };
 		1714B2921974E4FB006E9C7B /* MenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714B2911974E4FB006E9C7B /* MenuTests.m */; };
+		1714B2A01974E573006E9C7B /* OAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714B29E1974E573006E9C7B /* OAHomeViewController.m */; };
+		1714B2A11974E573006E9C7B /* OAHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1714B29F1974E573006E9C7B /* OAHomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		1714B28D1974E4FB006E9C7B /* MenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MenuTests-Info.plist"; sourceTree = "<group>"; };
 		1714B28F1974E4FB006E9C7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1714B2911974E4FB006E9C7B /* MenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTests.m; sourceTree = "<group>"; };
+		1714B29D1974E573006E9C7B /* OAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHomeViewController.h; sourceTree = "<group>"; };
+		1714B29E1974E573006E9C7B /* OAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHomeViewController.m; sourceTree = "<group>"; };
+		1714B29F1974E573006E9C7B /* OAHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAHomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,7 @@
 		1714B2721974E4FB006E9C7B /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				1714B29B1974E561006E9C7B /* classes */,
 				1714B27B1974E4FB006E9C7B /* OAAppDelegate.h */,
 				1714B27C1974E4FB006E9C7B /* OAAppDelegate.m */,
 				1714B27E1974E4FB006E9C7B /* Images.xcassets */,
@@ -142,6 +148,24 @@
 				1714B28E1974E4FB006E9C7B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1714B29B1974E561006E9C7B /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				1714B29C1974E561006E9C7B /* controllers */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		1714B29C1974E561006E9C7B /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1714B29D1974E573006E9C7B /* OAHomeViewController.h */,
+				1714B29E1974E573006E9C7B /* OAHomeViewController.m */,
+				1714B29F1974E573006E9C7B /* OAHomeViewController.xib */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +246,7 @@
 			files = (
 				1714B2771974E4FB006E9C7B /* InfoPlist.strings in Resources */,
 				1714B27F1974E4FB006E9C7B /* Images.xcassets in Resources */,
+				1714B2A11974E573006E9C7B /* OAHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +267,7 @@
 			files = (
 				1714B27D1974E4FB006E9C7B /* OAAppDelegate.m in Sources */,
 				1714B2791974E4FB006E9C7B /* main.m in Sources */,
+				1714B2A01974E573006E9C7B /* OAHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
