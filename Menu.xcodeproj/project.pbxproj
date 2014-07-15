@@ -25,6 +25,10 @@
 		1714B2A91974E694006E9C7B /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714B2A81974E694006E9C7B /* UIViewController+Addition.m */; };
 		1714B2AD1974E795006E9C7B /* OAMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714B2AB1974E795006E9C7B /* OAMenuViewController.m */; };
 		1714B2AE1974E795006E9C7B /* OAMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1714B2AC1974E795006E9C7B /* OAMenuViewController.xib */; };
+		1714B2B81974EB41006E9C7B /* OAMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714B2B61974EB41006E9C7B /* OAMenuTableViewCell.m */; };
+		1714B2B91974EB41006E9C7B /* OAMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1714B2B71974EB41006E9C7B /* OAMenuTableViewCell.xib */; };
+		17560B391974ECD400852112 /* OAArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 17560B381974ECD400852112 /* OAArrayDataSource.m */; };
+		17560B3F1974EDDB00852112 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = 17560B3E1974EDDB00852112 /* UIView+Nib.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,13 @@
 		1714B2AA1974E795006E9C7B /* OAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMenuViewController.h; sourceTree = "<group>"; };
 		1714B2AB1974E795006E9C7B /* OAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMenuViewController.m; sourceTree = "<group>"; };
 		1714B2AC1974E795006E9C7B /* OAMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAMenuViewController.xib; sourceTree = "<group>"; };
+		1714B2B51974EB41006E9C7B /* OAMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMenuTableViewCell.h; sourceTree = "<group>"; };
+		1714B2B61974EB41006E9C7B /* OAMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMenuTableViewCell.m; sourceTree = "<group>"; };
+		1714B2B71974EB41006E9C7B /* OAMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAMenuTableViewCell.xib; sourceTree = "<group>"; };
+		17560B371974ECD400852112 /* OAArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAArrayDataSource.h; sourceTree = "<group>"; };
+		17560B381974ECD400852112 /* OAArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAArrayDataSource.m; sourceTree = "<group>"; };
+		17560B3D1974EDDB00852112 /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib.h"; sourceTree = "<group>"; };
+		17560B3E1974EDDB00852112 /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +175,8 @@
 		1714B29B1974E561006E9C7B /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				17560B361974ECD400852112 /* helpers */,
+				1714B2B41974EB33006E9C7B /* views */,
 				1714B2A61974E685006E9C7B /* categories */,
 				1714B2A21974E61C006E9C7B /* popUpModule */,
 				1714B29C1974E561006E9C7B /* controllers */,
@@ -200,6 +213,27 @@
 				1714B2A81974E694006E9C7B /* UIViewController+Addition.m */,
 			);
 			path = categories;
+			sourceTree = "<group>";
+		};
+		1714B2B41974EB33006E9C7B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1714B2B51974EB41006E9C7B /* OAMenuTableViewCell.h */,
+				1714B2B61974EB41006E9C7B /* OAMenuTableViewCell.m */,
+				1714B2B71974EB41006E9C7B /* OAMenuTableViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		17560B361974ECD400852112 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				17560B371974ECD400852112 /* OAArrayDataSource.h */,
+				17560B381974ECD400852112 /* OAArrayDataSource.m */,
+				17560B3D1974EDDB00852112 /* UIView+Nib.h */,
+				17560B3E1974EDDB00852112 /* UIView+Nib.m */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +316,7 @@
 				1714B2AE1974E795006E9C7B /* OAMenuViewController.xib in Resources */,
 				1714B27F1974E4FB006E9C7B /* Images.xcassets in Resources */,
 				1714B2A11974E573006E9C7B /* OAHomeViewController.xib in Resources */,
+				1714B2B91974EB41006E9C7B /* OAMenuTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,11 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17560B391974ECD400852112 /* OAArrayDataSource.m in Sources */,
 				1714B27D1974E4FB006E9C7B /* OAAppDelegate.m in Sources */,
+				17560B3F1974EDDB00852112 /* UIView+Nib.m in Sources */,
 				1714B2A51974E626006E9C7B /* OAPopupViewController.m in Sources */,
 				1714B2791974E4FB006E9C7B /* main.m in Sources */,
 				1714B2A91974E694006E9C7B /* UIViewController+Addition.m in Sources */,
 				1714B2A01974E573006E9C7B /* OAHomeViewController.m in Sources */,
+				1714B2B81974EB41006E9C7B /* OAMenuTableViewCell.m in Sources */,
 				1714B2AD1974E795006E9C7B /* OAMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +540,7 @@
 				1714B2971974E4FB006E9C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1714B2981974E4FB006E9C7B /* Build configuration list for PBXNativeTarget "MenuTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +549,7 @@
 				1714B29A1974E4FB006E9C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
