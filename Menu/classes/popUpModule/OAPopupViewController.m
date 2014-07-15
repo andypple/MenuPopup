@@ -7,6 +7,7 @@
 //
 
 #import "OAPopupViewController.h"
+#import <FXBlurView.h>
 
 static NSInteger close_button_x = 15;
 static NSInteger close_button_y = 30;
@@ -18,6 +19,7 @@ static NSInteger close_button_height = 44;
 @property (strong, nonatomic) UIViewController *contentViewController;
 @property (strong, nonatomic) UIView *contentView;
 @property (strong, nonatomic) UIButton *closeButton;
+@property (strong, nonatomic) UIImageView *blurImageView;
 
 @end
 
@@ -38,9 +40,21 @@ static NSInteger close_button_height = 44;
     [self setupView];
 }
 
+- (UIImageView *)blurImageView
+{
+    if (!_blurImageView) {
+        _blurImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    }
+    return _blurImageView;
+}
+
+
 - (void)showInView:(UIView *)aView animated:(BOOL)animated
 {
     dispatch_async(dispatch_get_main_queue(), ^{
+        self.blurImageView.image = [[aView screenShot] blurredImageWithRadius:10 iterations:12 tintColor:nil];
+        [self.view insertSubview:self.blurImageView belowSubview:self.contentView];
+
         [aView addSubview:self.view];
         
         if (animated) {
